@@ -217,7 +217,7 @@ public class NotificationBuilder {
             builder.setChannelId(channel.getChannelKey());
         }
 
-        builder.setContentIntent(pendingIntent);
+        builder.setFullScreenIntent(pendingIntent, true);
         builder.setDeleteIntent(deleteIntent);
 
         return builder;
